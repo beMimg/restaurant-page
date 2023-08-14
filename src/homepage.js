@@ -21,9 +21,32 @@ function createHeader() {
   return header;
 }
 
+function createMain() {
+  const main = document.createElement("main");
+  main.setAttribute("class", "main");
+
+  const brand = document.createElement("div");
+  brand.setAttribute("class", "brand");
+
+  const brandTitle = document.createElement("h9");
+  brandTitle.setAttribute("id", "brandTitle");
+  brandTitle.textContent = `Piazza Pizzaiolo`;
+
+  const brandSlogan = document.createElement("p");
+  brandSlogan.setAttribute("id", "brandSlogan");
+  brandSlogan.textContent = `Dove Ogni Fetta Racconta una Storia Toscana!`;
+
+  main.appendChild(brand);
+  brand.appendChild(brandTitle);
+  brand.appendChild(brandSlogan);
+
+  return main;
+}
+
 function initializePage() {
   const content = document.getElementById("content");
   content.appendChild(createHeader());
+  content.appendChild(createMain());
 }
 
 export default initializePage;
