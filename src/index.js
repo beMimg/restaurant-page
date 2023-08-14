@@ -1,3 +1,3 @@
-import pageLoad from "./page-load";
+import initializePage from "./homepage";
 
-pageLoad();
+initializePage();
