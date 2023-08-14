@@ -43,10 +43,25 @@ function createMain() {
   return main;
 }
 
+function createFooter() {
+  const footer = document.createElement("footer");
+  footer.setAttribute("class", "footer");
+
+  const credits = document.createElement("p");
+  credits.setAttribute("id", "credits");
+  credits.innerHTML = `made by
+  <a href="https://github.com/beMimg">beMimg </a>`;
+
+  footer.appendChild(credits);
+
+  return footer;
+}
+
 function initializePage() {
   const content = document.getElementById("content");
   content.appendChild(createHeader());
   content.appendChild(createMain());
+  content.appendChild(createFooter());
 }
 
 export default initializePage;
