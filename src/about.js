@@ -4,18 +4,19 @@ function aboutInfo() {
 
   const phoneNumber = document.createElement("p");
   phoneNumber.setAttribute("class", "phone-number");
-  phoneNumber.textContent = "Fake Phone Number: +1 (555) 123-4567";
+  phoneNumber.innerHTML =
+    "Fake Phone Number: <strong>+1 (555) 123-4567</strong>";
 
   const location = document.createElement("p");
   location.setAttribute("class", "location");
-  location.textContent = "Fake Location: Springdale, Meadowland";
+  location.innerHTML = "Fake Location: <strong>Springdale, Meadowland</strong>";
 
   const openTime = document.createElement("p");
   openTime.setAttribute("class", "open-time");
-  openTime.textContent = `Fake Business Opening Time:
+  openTime.innerHTML = `Fake Business Opening Time: <strong>
   Monday - Friday: 9:00 AM - 6:00 PM
   Saturday: 10:00 AM - 4:00 PM
-  Sunday: Closed`;
+  Sunday: Closed</strong>`;
 
   infoContainer.appendChild(phoneNumber);
   infoContainer.appendChild(location);

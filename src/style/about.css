@@ -7,3 +7,15 @@
   padding: 20px;
   font-size: 3vh;
 }
+
+.phone-number {
+  border-bottom: 1px solid white;
+}
+
+.location {
+  border-bottom: 1px solid white;
+}
+
+.open-time {
+  border-bottom: 1px solid white;
+}

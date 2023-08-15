@@ -8,7 +8,6 @@ function createHeader() {
   const homeBtn = document.createElement("button");
   homeBtn.setAttribute("id", "homeBtn");
   homeBtn.textContent = `Home`;
-  homeBtn.addEventListener("click", function () {});
 
   const menuBtn = document.createElement("button");
   menuBtn.setAttribute("id", "menuBtn");
