@@ -23,20 +23,19 @@ body {
 }
 
 .header {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   border: 0;
   background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-items: center;
 }
 
 .header button {
   text-align: center;
-  margin: 3px;
   font-family: "Font-regular-text";
   cursor: pointer;
-  font-size: 2rem;
+  font-size: 3vh;
   padding: 10px;
 }
 
@@ -56,13 +55,13 @@ body {
 }
 
 #brandTitle {
-  font-size: 4rem;
+  font-size: 8vh;
   font-family: "Font-pizza";
 }
 
 #brandSlogan {
   font-family: "Font-regular-text";
-  font-size: 1.5rem;
+  font-size: 3vh;
   font-weight: 600;
 }
 
