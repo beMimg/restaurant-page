@@ -1,5 +1,6 @@
 import loadMenu from "./menu";
 import loadAbout from "./about";
+import { loadHome, createHome } from "./home";
 
 function createHeader() {
   const header = document.createElement("header");
@@ -8,6 +9,9 @@ function createHeader() {
   const homeBtn = document.createElement("button");
   homeBtn.setAttribute("id", "homeBtn");
   homeBtn.textContent = `Home`;
+  homeBtn.addEventListener("click", function () {
+    loadHome();
+  });
 
   const menuBtn = document.createElement("button");
   menuBtn.setAttribute("id", "menuBtn");
@@ -34,21 +38,7 @@ function createMain() {
   const main = document.createElement("main");
   main.setAttribute("class", "main");
 
-  const brand = document.createElement("div");
-  brand.setAttribute("class", "brand");
-
-  const brandTitle = document.createElement("h9");
-  brandTitle.setAttribute("id", "brandTitle");
-  brandTitle.textContent = `Piazza Pizzaiolo`;
-
-  const brandSlogan = document.createElement("p");
-  brandSlogan.setAttribute("id", "brandSlogan");
-  brandSlogan.textContent = `Dove Ogni Fetta Racconta una Storia Toscana!`;
-
-  main.appendChild(brand);
-  brand.appendChild(brandTitle);
-  brand.appendChild(brandSlogan);
-
+  main.appendChild(createHome());
   return main;
 }
 
