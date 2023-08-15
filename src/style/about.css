@@ -1,23 +1,9 @@
-.menu {
+.info-container {
   background-color: rgba(0, 0, 0, 0.8);
   display: flex;
   flex-direction: column;
-}
-
-.menu-card {
   color: white;
   font-family: "Font-regular-text";
-  border-bottom: 1px solid white;
-  border-top: 1px solid white;
   padding: 20px;
-}
-
-.menu-title {
   font-size: 3vh;
-  margin: 0;
-}
-
-.menu-info {
-  margin: 0;
-  font-size: 2vh;
 }

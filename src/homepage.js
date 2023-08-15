@@ -1,4 +1,5 @@
 import loadMenu from "./menu";
+import loadAbout from "./about";
 
 function createHeader() {
   const header = document.createElement("header");
@@ -7,6 +8,7 @@ function createHeader() {
   const homeBtn = document.createElement("button");
   homeBtn.setAttribute("id", "homeBtn");
   homeBtn.textContent = `Home`;
+  homeBtn.addEventListener("click", function () {});
 
   const menuBtn = document.createElement("button");
   menuBtn.setAttribute("id", "menuBtn");
@@ -18,6 +20,9 @@ function createHeader() {
   const aboutBtn = document.createElement("button");
   aboutBtn.setAttribute("id", "aboutBtn");
   aboutBtn.textContent = `About`;
+  aboutBtn.addEventListener("click", function () {
+    loadAbout();
+  });
 
   header.appendChild(homeBtn);
   header.appendChild(menuBtn);
