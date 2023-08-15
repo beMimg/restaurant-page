@@ -8,14 +8,13 @@
 }
 
 body {
-  height: 100vh;
   margin: 0;
   padding: 0;
 }
 
 #content {
   display: grid;
-  grid-template-rows: 15% 80% 5%;
+  grid-template-rows: 15% 75% 10%;
   height: 100vh;
   background-image: url(../img/pexels-vinicius-benedit-1082343.jpg);
   background-size: cover;
@@ -26,7 +25,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   border: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
   align-items: center;
   justify-items: center;
 }
@@ -40,14 +39,14 @@ body {
 }
 
 .main {
-  display: flex;
+  display: grid;
   align-items: center;
 }
 
 .brand {
   color: white;
-  background-color: rgba(0, 0, 0, 0.8);
   width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
 
   display: flex;
   flex-direction: column;
@@ -68,11 +67,13 @@ body {
 .footer {
   background-color: rgba(0, 0, 0, 0.5);
   font-family: "Font-regular-text";
-  display: flex;
   color: white;
-  align-items: center;
-  justify-content: center;
   gap: 20px;
+  margin-top: auto;
+
+  display: grid;
+  align-items: center;
+  justify-items: center;
 }
 
 .footer img {

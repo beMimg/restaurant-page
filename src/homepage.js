@@ -1,3 +1,5 @@
+import loadMenu from "./menu";
+
 function createHeader() {
   const header = document.createElement("header");
   header.setAttribute("class", "header");
@@ -9,6 +11,9 @@ function createHeader() {
   const menuBtn = document.createElement("button");
   menuBtn.setAttribute("id", "menuBtn");
   menuBtn.textContent = `Menu`;
+  menuBtn.addEventListener("click", function () {
+    loadMenu();
+  });
 
   const aboutBtn = document.createElement("button");
   aboutBtn.setAttribute("id", "aboutBtn");
